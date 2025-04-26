@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "5242",
+      "username": "ajaz",
+      "email": "ajaz@mycariq.com",
+      "password": "ajaz@123"
+    },
+    {
+      "id": "8631",
+      "username": "ajaztest",
+      "email": "ajaz1@gmail.com",
+      "password": "ajazbeig@123"
+    },
+    {
+      "id": "08e9",
+      "username": "pratham",
+      "email": "pratham@gmail.com",
+      "password": "pratham@123"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "name": "Ajazz",
+      "author": "ajaz",
+      "username": "ajaz"
+    },
+    {
+      "id": 2,
+      "name": "pra",
+      "author": "pra",
+      "username": "pratham"
+    }
+  ]
+}

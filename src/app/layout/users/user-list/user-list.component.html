@@ -1,0 +1,24 @@
+<h2>User List</h2>
+<p>Here you can see the list of users!</p>
+
+<!-- Display loading message while data is being fetched -->
+<div *ngIf="isLoading">Loading users...</div>
+
+<!-- Display error message if there is an error fetching users -->
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+<!-- Display user list when users are fetched successfully -->
+<table *ngIf="!isLoading && !errorMessage">
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.username }}</td>
+      <td>{{ user.email }}</td>
+    </tr>
+  </tbody>
+</table>

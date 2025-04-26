@@ -1,0 +1,25 @@
+<div><button routerLink="/layout/book/add">Add Book</button></div>
+<div *ngIf="isLoading">Loading books...</div>
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+<table *ngIf="!isLoading && !errorMessage">
+  <thead>
+    <tr>
+      <th>Book ID</th>
+      <th>Book Name</th>
+      <th>Author</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{ book.id }}</td>
+      <td>{{ book.name }}</td>
+      <td>{{ book.author }}</td>
+      <td>
+        <!-- <button (click)="editBook(book)" class="btn btn-warning">Edit</button> -->
+        <button (click)="deleteBook(book.id)" class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
